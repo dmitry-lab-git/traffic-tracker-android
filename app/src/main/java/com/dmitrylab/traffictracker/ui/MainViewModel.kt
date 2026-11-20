@@ -22,8 +22,8 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         viewModelScope.launch {
             while (true) {
                 val now = System.currentTimeMillis()
-                // ерем трафик за последний час
-                val stats = collector.getTrafficForPeriod(now - 3600000, now)
+                // ерем трафик за последние 24 часа
+                val stats = collector.getTrafficForPeriod(now - 86400000, now)
                 _totalTraffic.value = stats
                 delay(5000) // бновляем раз в 5 секунд
             }
