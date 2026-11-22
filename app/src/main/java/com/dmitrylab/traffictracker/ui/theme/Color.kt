@@ -1,4 +1,4 @@
-package com.dmitrylab.traffictracker.ui.theme
+﻿package com.dmitrylab.traffictracker.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
